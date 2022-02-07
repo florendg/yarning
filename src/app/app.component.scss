@@ -1,0 +1,7 @@
+.card {
+  display: block;
+  outline: solid red 1px;
+  &-title{
+    font-size: 2em;
+  }
+}
