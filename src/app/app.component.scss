@@ -1,7 +1,19 @@
 .card {
   display: block;
-  outline: solid red 1px;
   &-title{
     font-size: 2em;
+  }
+}
+
+.button-bar {
+  display: flex;
+  flex-flow: row;
+  justify-content: flex-end;
+  align-items: baseline;
+
+  &-button {
+    border-radius: 5px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    margin-left: 0.1em;
   }
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Card } from "./model/card";
+import { TranslateService } from "@ngx-translate/core";
 
 @Component({
   selector: 'app-root',
@@ -7,6 +8,11 @@ import { Card } from "./model/card";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
+
+  constructor(private translate: TranslateService){
+    translate.setDefaultLang('nl-NL');
+    //translate.use('en');
+  }
 
   task: Card = {
     title: 'Task 1',
